@@ -1,5 +1,3 @@
-TankGame/Intermediate/
-
 # Visual Studio 2015 user specific files
 .vs/
 
@@ -77,6 +75,6 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-TankGame/Saved/Backup/TankBP_2018-02-20-14-27-18.uasset
-TankGame/Saved/AutoScreenshot.png
-TankGame/Saved/
+
+*/Saved
+*/Intermediate
