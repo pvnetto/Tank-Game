@@ -17,7 +17,14 @@ class TANKGAME_API ATankPlayerController : public APlayerController
 	
 public:
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaTime) override;
+	void AimTowardsCrosshair();
+	bool GetSightRayHitLocation(FVector & hitLocation);
 
 	ATank* GetControlledTank () const;
 
+private:
+	UPROPERTY(EditAnywhere) float crosshairXLocation = 0.5f;
+	UPROPERTY(EditAnywhere) float crosshairYLocation = 0.3333f;
+	UPROPERTY(EditAnywhere) float range = 1000000.0f;
 };
